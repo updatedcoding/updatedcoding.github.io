@@ -1,45 +1,86 @@
 @font-face {
   font-family: Vazir;
-  src: url('/fonts/vazir/Vazir.eot');
-  src: url('/fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
-	   url('/fonts/vazir/Vazir.woff') format('woff'),
-	   url('/fonts/vazir/Vazir.ttf') format('truetype');
+  src: url('/assets/fonts/vazir/Vazir.eot');
+  src: url('/assets/fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+	   url('/assets/fonts/vazir/Vazir.woff') format('woff'),
+	   url('/assets/fonts/vazir/Vazir.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url('/fonts/vazir/Vazir-Bold.eot');
-  src: url('/fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-	   url('/fonts/vazir/Vazir-Bold.woff') format('woff'),
-	   url('/fonts/vazir/Vazir-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/vazir/Vazir-Bold.eot');
+  src: url('/assets/fonts/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+	   url('/assets/fonts/vazir/Vazir-Bold.woff') format('woff'),
+	   url('/assets/fonts/vazir/Vazir-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url('/fonts/vazir/Vazir-Light.eot');
-  src: url('/fonts/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
-	   url('/fonts/vazir/Vazir-Light.woff') format('woff'),
-	   url('/fonts/vazir/Vazir-Light.ttf') format('truetype');
+  src: url('/assets/fonts/vazir/Vazir-Light.eot');
+  src: url('/assets/fonts/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+	   url('/assets/fonts/vazir/Vazir-Light.woff') format('woff'),
+	   url('/assets/fonts/vazir/Vazir-Light.ttf') format('truetype');
   font-weight: 300;
 }
 body {
   background-color: #fff;
-  padding:50px;
-  font: Vazir, 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color:#595959;
+  padding:10px;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Vazir;
+  /*font-size: 14px;*/
+  color:#292929;
+ 
   font-weight:400;
   direction:rtl;
+}
+
+
+#table-of-contents{
+	border:1px solid gray;
+	width:50%;
+	background-color: #eee;
+	padding:10px 0;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+
+#table-of-contents a{
+	color:black;
+}
+
+#table-of-contents ul{
+	list-style-type:none;
+	list-style:none none inside;
+	margin:0px;
+	padding:0 ;
+}
+#table-of-contents ul li{
+	margin:0px;
+	padding-right:10px;
+	padding-bottom:10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0 0 20px;
 }
-
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color:#222;
+}
+code, pre{
+	direction:ltr;
+}
+.ltr{
+	direction:ltr;
+}
+.rtl{
+	direction:rtl;
+}
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+  
 }
 
 h1, h2, h3 {
@@ -82,7 +123,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:1024px;
   margin:0 auto;
 }
 
@@ -132,7 +173,7 @@ img {
 
 header {
   width:270px;
-  float:left;
+  float:right;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
@@ -149,7 +190,7 @@ header ul {
 
 header li {
   width:89px;
-  float:left;
+  float:right;
   border-right:1px solid #e0e0e0;
   height:40px;
 }
@@ -197,9 +238,11 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
+  width:740px;
+  float:left;
   padding-bottom:50px;
+  border-right: 1px solid #eee;
+  padding-right:10px
 }
 
 small {
@@ -215,7 +258,7 @@ hr {
 
 footer {
   width:270px;
-  float:left;
+  float:right;
   position:fixed;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
